@@ -2,6 +2,10 @@
 
 Source files for [Voicemeeter Streamer View App][streamer_view_app] which can be found in the [applications SDK](https://github.com/vburel2018/Voicemeeter-SDK).
 
+### Releases
+
+I've included some customised themes you can check them out [here](RELEASES.md). They are available for download in [Release](https://github.com/onyx-and-iris/vmr_streamer/releases).
+
 ### Build
 
 For a step-by-step follow [these instructions][install].
