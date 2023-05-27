@@ -422,23 +422,23 @@ long InitResources(LPT_APP_CONTEXT lpapp)
 	
 	//make pen brush 
 	CreateColorPenBrush(&(lpapp->gdiobjects_black), RGB(0,0,0));
-	CreateColorPenBrush(&(lpapp->gdiobjects_bkg), RGB(18,32,41));
-	CreateColorPenBrush(&(lpapp->gdiobjects_bkg_ctl), RGB(44,61,77));
-	CreateColorPenBrush(&(lpapp->gdiobjects_blue0), RGB(71,90,103));
+	CreateColorPenBrush(&(lpapp->gdiobjects_bkg), RGB(0, 26, 51));
+	CreateColorPenBrush(&(lpapp->gdiobjects_bkg_ctl), RGB(0, 40, 77));
+	CreateColorPenBrush(&(lpapp->gdiobjects_blue0), RGB(230, 184, 0));
 	CreateColorPenBrush(&(lpapp->gdiobjects_blue1), RGB(95,120,137));
-	CreateColorPenBrush(&(lpapp->gdiobjects_blue2), RGB(111,140,160));
-	CreateColorPenBrush(&(lpapp->gdiobjects_blue3), RGB(104,230,248));
+	CreateColorPenBrush(&(lpapp->gdiobjects_blue2), RGB(255, 153, 0));
+	CreateColorPenBrush(&(lpapp->gdiobjects_blue3), RGB(230, 184, 0));
 	CreateColorPenBrush(&(lpapp->gdiobjects_buttongreen), RGB(36,167,49));
-	CreateColorPenBrush(&(lpapp->gdiobjects_slidergreen), RGB(112,195,153));
+	CreateColorPenBrush(&(lpapp->gdiobjects_slidergreen), RGB(255, 204, 0));
 	CreateColorPenBrush(&(lpapp->gdiobjects_sliderred), RGB(248,99,77));
-	CreateColorPenBrush(&(lpapp->gdiobjects_white), RGB(255,255,255));
+	CreateColorPenBrush(&(lpapp->gdiobjects_white), RGB(230, 184, 0));
 
-	CreateColorPenBrush(&(lpapp->gdiobjects_meter_blue), RGB(130,170,180));
-	CreateColorPenBrush(&(lpapp->gdiobjects_meter_green), RGB(30,255,90));
-	CreateColorPenBrush(&(lpapp->gdiobjects_meter_red), RGB(250,0,0));
+	CreateColorPenBrush(&(lpapp->gdiobjects_meter_blue), RGB(255, 204, 0));
+	CreateColorPenBrush(&(lpapp->gdiobjects_meter_green), RGB(255, 153, 0));
+	CreateColorPenBrush(&(lpapp->gdiobjects_meter_red), RGB(248, 99, 77));
 
 	CreateColorPenBrush(&(lpapp->gdiobjects_mute), RGB(246,91,81));
-	CreateColorPenBrush(&(lpapp->gdiobjects_monitor), RGB(203,174,130));
+	CreateColorPenBrush(&(lpapp->gdiobjects_monitor), RGB(230, 184, 0));
 	CreateColorPenBrush(&(lpapp->gdiobjects_grey), RGB(100,100,100));
 	
 	return 0;
@@ -1710,7 +1710,7 @@ void DrawVMConnectionMode(LPT_APP_CONTEXT lpapp, HDC dc)
 	oldbrush = (HBRUSH)SelectObject(dc,lpapp->gdiobjects_bkg.brush);
 	oldfont = (HFONT)SelectObject(dc,lpapp->font1);
 	SetBkMode(dc,TRANSPARENT);
-	SetTextColor(dc,RGB(255,255,255));
+	SetTextColor(dc,RGB(255, 153, 0));
 	if (lpapp->vbvmr_connect == 0) SetTextColor(dc,RGB(200,0,0));
 
 	RoundRect(dc,rect.left,rect.top,rect.right,rect.bottom,7,7);
