@@ -1,6 +1,6 @@
 # Step by step
 
-These instructions should work for both Debug/Release builds. In this case we target Release x64.
+These instructions should work for both Debug/Release builds. In this case we target Release x64. All of the `Releases` were built with [Visual Studio 2022][vs_2022].
 
 ![Release][release]
 
@@ -16,6 +16,7 @@ Check that `_CRT_SECURE_NO_DEPRECATE` and if targeting an x64 build `VB_X64` are
 Ensure `Ws2_32.lib` is included as an additional dependency.
 ![Linker dependencies][linker]
 
+[vs_2022]: https://visualstudio.microsoft.com/vs/
 [release]: vmr_streamer/img/vm1-inst.png
 [properties]: vmr_streamer/img/vm2-inst.png
 [char_set]: vmr_streamer/img/vm3-inst.png
