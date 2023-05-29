@@ -4,7 +4,7 @@ Source files for [Voicemeeter Streamer View App][streamer_view_app] which can be
 
 ### Releases
 
-I've included some customised themes you can check them out [here](RELEASES.md). They are available for download in [Release](https://github.com/onyx-and-iris/vmr_streamer/releases).
+I've included some customised themes you can check them out [here](RELEASES.md). They are available for download in [Releases](https://github.com/onyx-and-iris/vmr_streamer/releases).
 
 ### Build
 
